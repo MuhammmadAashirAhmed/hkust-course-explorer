@@ -24,13 +24,12 @@ import * as Linking from "expo-linking"
 import { KeyboardProvider } from "react-native-keyboard-controller"
 import { initialWindowMetrics, SafeAreaProvider } from "react-native-safe-area-context"
 
-import { AuthProvider } from "./context/AuthContext"
+import { CourseDataProvider } from "./data/CourseDataContext"
 import { initI18n } from "./i18n"
 import { AppNavigator } from "./navigators/AppNavigator"
 import { useNavigationPersistence } from "./navigators/navigationUtilities"
 import { ThemeProvider } from "./theme/context"
 import { customFontsToLoad } from "./theme/typography"
-import { loadDateFnsLocale } from "./utils/formatDate"
 import * as storage from "./utils/storage"
 
 export const NAVIGATION_PERSISTENCE_KEY = "NAVIGATION_STATE"
@@ -39,20 +38,9 @@ export const NAVIGATION_PERSISTENCE_KEY = "NAVIGATION_STATE"
 const prefix = Linking.createURL("/")
 const config = {
   screens: {
-    Login: {
-      path: "",
-    },
-    Welcome: "welcome",
-    Demo: {
-      screens: {
-        DemoShowroom: {
-          path: "showroom/:queryIndex?/:itemIndex?",
-        },
-        DemoDebug: "debug",
-        DemoPodcastList: "podcast",
-        DemoCommunity: "community",
-      },
-    },
+    CourseList: "",
+    CourseDetail: "course/:code",
+    PrerequisiteExplorer: "course/:code/prerequisites",
   },
 }
 
@@ -72,9 +60,7 @@ export function App() {
   const [isI18nInitialized, setIsI18nInitialized] = useState(false)
 
   useEffect(() => {
-    initI18n()
-      .then(() => setIsI18nInitialized(true))
-      .then(() => loadDateFnsLocale())
+    initI18n().then(() => setIsI18nInitialized(true))
   }, [])
 
   // Before we show the app, we have to wait for our state to be ready.
@@ -96,7 +82,7 @@ export function App() {
   return (
     <SafeAreaProvider initialMetrics={initialWindowMetrics}>
       <KeyboardProvider>
-        <AuthProvider>
+        <CourseDataProvider>
           <ThemeProvider>
             <AppNavigator
               linking={linking}
@@ -104,7 +90,7 @@ export function App() {
               onStateChange={onNavigationStateChange}
             />
           </ThemeProvider>
-        </AuthProvider>
+        </CourseDataProvider>
       </KeyboardProvider>
     </SafeAreaProvider>
   )

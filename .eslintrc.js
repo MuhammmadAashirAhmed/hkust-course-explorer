@@ -102,4 +102,11 @@ module.exports = {
     ],
     "import/newline-after-import": 1,
   },
+  overrides: [
+    {
+      // Build-time Node scripts (run via `node scripts/...`, never bundled into the app).
+      files: ["scripts/**/*.js"],
+      env: { node: true },
+    },
+  ],
 }

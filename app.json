@@ -1,7 +1,7 @@
 {
-  "name": "AppTechTest2627",
-  "slug": "AppTechTest2627",
-  "scheme": "apptechtest2627",
+  "name": "HKUST Course Explorer",
+  "slug": "hkust-course-explorer",
+  "scheme": "coursexplorer",
   "version": "1.0.0",
   "orientation": "portrait",
   "userInterfaceStyle": "automatic",
@@ -34,7 +34,6 @@
     "bundler": "metro"
   },
   "plugins": [
-    "expo-localization",
     "expo-font",
     [
       "expo-splash-screen",

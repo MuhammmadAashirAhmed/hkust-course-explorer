@@ -1,20 +1,18 @@
 /**
- * The app navigator (formerly "AppNavigator" and "MainNavigator") is used for the primary
- * navigation flows of your app.
- * Generally speaking, it will contain an auth flow (registration, login, forgot password)
- * and a "main" flow which the user will use once logged in.
+ * The app navigator is used for the primary navigation flow of the app.
+ * There is no auth flow: the brief requires no backend, login, or live API,
+ * so the app boots straight into the course catalogue.
  */
 import { NavigationContainer } from "@react-navigation/native"
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
 
 import Config from "@/config"
-import { useAuth } from "@/context/AuthContext"
+import { CourseDetailScreen } from "@/screens/CourseDetailScreen"
+import { CourseListScreen } from "@/screens/CourseListScreen"
 import { ErrorBoundary } from "@/screens/ErrorScreen/ErrorBoundary"
-import { LoginScreen } from "@/screens/LoginScreen"
-import { WelcomeScreen } from "@/screens/WelcomeScreen"
+import { PrerequisiteExplorerScreen } from "@/screens/PrerequisiteExplorerScreen"
 import { useAppTheme } from "@/theme/context"
 
-import { DemoNavigator } from "./DemoNavigator"
 import type { AppStackParamList, NavigationProps } from "./navigationTypes"
 import { navigationRef, useBackButtonHandler } from "./navigationUtilities"
 
@@ -28,8 +26,6 @@ const exitRoutes = Config.exitRoutes
 const Stack = createNativeStackNavigator<AppStackParamList>()
 
 const AppStack = () => {
-  const { isAuthenticated } = useAuth()
-
   const {
     theme: { colors },
   } = useAppTheme()
@@ -43,22 +39,11 @@ const AppStack = () => {
           backgroundColor: colors.background,
         },
       }}
-      initialRouteName={isAuthenticated ? "Welcome" : "Login"}
+      initialRouteName="CourseList"
     >
-      {isAuthenticated ? (
-        <>
-          <Stack.Screen name="Welcome" component={WelcomeScreen} />
-
-          <Stack.Screen name="Demo" component={DemoNavigator} />
-        </>
-      ) : (
-        <>
-          <Stack.Screen name="Login" component={LoginScreen} />
-        </>
-      )}
-
-      {/** 🔥 Your screens go here */}
-      {/* IGNITE_GENERATOR_ANCHOR_APP_STACK_SCREENS */}
+      <Stack.Screen name="CourseList" component={CourseListScreen} />
+      <Stack.Screen name="CourseDetail" component={CourseDetailScreen} />
+      <Stack.Screen name="PrerequisiteExplorer" component={PrerequisiteExplorerScreen} />
     </Stack.Navigator>
   )
 }

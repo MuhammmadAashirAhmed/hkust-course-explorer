@@ -1,10 +1,7 @@
 /**
  * These are configuration settings for the production environment.
  *
- * Do not include API secrets in this file or anywhere in your JS.
- *
- * https://reactnative.dev/docs/security#storing-sensitive-info
+ * This app has no backend and no API calls: all course data ships in the
+ * bundle and is read from disk, so there is nothing to configure here.
  */
-export default {
-  API_URL: "https://api.rss2json.com/v1/",
-}
+export default {}
