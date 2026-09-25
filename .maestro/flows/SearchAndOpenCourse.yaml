@@ -1,0 +1,15 @@
+appId: ${MAESTRO_APP_ID}
+onFlowStart:
+  - runFlow: ../shared/_OnFlowStart.yaml
+---
+# Smoke test: search the catalogue, open a course, open its prerequisite tree.
+- assertVisible: "Course Explorer"
+- tapOn:
+    id: ".*"
+    text: "Search by course code or title"
+- inputText: "COMP 2211"
+- assertVisible: "COMP 2211"
+- tapOn: "COMP 2211"
+- assertVisible: "Introduction to Artificial Intelligence"
+- tapOn: "Explore prerequisite tree"
+- assertVisible: "Prerequisites"
