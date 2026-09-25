@@ -1,0 +1,317 @@
+{
+  "departments": [
+    {
+      "code": "ACCT",
+      "name": "ACCT"
+    },
+    {
+      "code": "AI",
+      "name": "AI (AIS)"
+    },
+    {
+      "code": "AMAT",
+      "name": "AMAT (AIS)"
+    },
+    {
+      "code": "AMC",
+      "name": "AMC"
+    },
+    {
+      "code": "BIBU",
+      "name": "LIFS+SBM"
+    },
+    {
+      "code": "BSBE",
+      "name": "BSBE (AIS)"
+    },
+    {
+      "code": "CBME",
+      "name": "CBE"
+    },
+    {
+      "code": "CEI",
+      "name": "CEI"
+    },
+    {
+      "code": "CFT",
+      "name": "CFT"
+    },
+    {
+      "code": "CHEM",
+      "name": "CHEM"
+    },
+    {
+      "code": "CIVL",
+      "name": "CIVL"
+    },
+    {
+      "code": "CMA",
+      "name": "CMA (AIS)"
+    },
+    {
+      "code": "CNCC",
+      "name": "CNCC"
+    },
+    {
+      "code": "CPEG",
+      "name": "CPEG"
+    },
+    {
+      "code": "CSE",
+      "name": "CSE"
+    },
+    {
+      "code": "DSA",
+      "name": "DSA (AIS)"
+    },
+    {
+      "code": "ECE",
+      "name": "ECE"
+    },
+    {
+      "code": "ECON",
+      "name": "ECON"
+    },
+    {
+      "code": "EECCS",
+      "name": "EECCS"
+    },
+    {
+      "code": "EMBA",
+      "name": "KH-EMBA"
+    },
+    {
+      "code": "EMIA",
+      "name": "EMIA"
+    },
+    {
+      "code": "ENTR",
+      "name": "ENTR"
+    },
+    {
+      "code": "ENVR",
+      "name": "ENVR"
+    },
+    {
+      "code": "EOAS",
+      "name": "EOAS (AIS)"
+    },
+    {
+      "code": "FINA",
+      "name": "FINA"
+    },
+    {
+      "code": "FINTECH",
+      "name": "FINTECH"
+    },
+    {
+      "code": "FTEC",
+      "name": "FTEC (AIS)"
+    },
+    {
+      "code": "FUNH",
+      "name": "FUNH (AIS)"
+    },
+    {
+      "code": "HUMA",
+      "name": "HUMA"
+    },
+    {
+      "code": "IELM",
+      "name": "IEDA"
+    },
+    {
+      "code": "INFH",
+      "name": "INFH (AIS)"
+    },
+    {
+      "code": "INTR",
+      "name": "INTR (AIS)"
+    },
+    {
+      "code": "IOT",
+      "name": "IOT (AIS)"
+    },
+    {
+      "code": "IPE",
+      "name": "IPE (AIS)"
+    },
+    {
+      "code": "IPO",
+      "name": "AIS"
+    },
+    {
+      "code": "IPO-DD",
+      "name": "TEMG"
+    },
+    {
+      "code": "ISDN",
+      "name": "ISDN"
+    },
+    {
+      "code": "ISOM",
+      "name": "ISOM"
+    },
+    {
+      "code": "JS",
+      "name": "JS"
+    },
+    {
+      "code": "LANG",
+      "name": "LANG"
+    },
+    {
+      "code": "LEGAL",
+      "name": "LEGAL"
+    },
+    {
+      "code": "LIFS",
+      "name": "LIFS"
+    },
+    {
+      "code": "MARK",
+      "name": "MARK"
+    },
+    {
+      "code": "MATH",
+      "name": "MATH"
+    },
+    {
+      "code": "MBA+",
+      "name": "MBA+ (AIS)"
+    },
+    {
+      "code": "MECH",
+      "name": "MAE"
+    },
+    {
+      "code": "MGMT",
+      "name": "MGMT"
+    },
+    {
+      "code": "MICS",
+      "name": "MICS (AIS)"
+    },
+    {
+      "code": "OCES",
+      "name": "OCES"
+    },
+    {
+      "code": "PGE",
+      "name": "PGE"
+    },
+    {
+      "code": "PHYS",
+      "name": "PHYS"
+    },
+    {
+      "code": "PLE",
+      "name": "PLE"
+    },
+    {
+      "code": "PPOL",
+      "name": "PPOL"
+    },
+    {
+      "code": "RMBI",
+      "name": "RMBI"
+    },
+    {
+      "code": "ROAS",
+      "name": "ROAS (AIS)"
+    },
+    {
+      "code": "SBM",
+      "name": "SBM"
+    },
+    {
+      "code": "SEE",
+      "name": "SEE (AIS)"
+    },
+    {
+      "code": "SENG",
+      "name": "SENG"
+    },
+    {
+      "code": "SGFN",
+      "name": "SBM+ENVR"
+    },
+    {
+      "code": "SHSS",
+      "name": "SHSS"
+    },
+    {
+      "code": "SMMG",
+      "name": "SMMG (AIS)"
+    },
+    {
+      "code": "SOCH",
+      "name": "SOCH (AIS)"
+    },
+    {
+      "code": "SOSC",
+      "name": "SOSC"
+    },
+    {
+      "code": "SSCI",
+      "name": "SSCI"
+    },
+    {
+      "code": "STEM",
+      "name": "STEM"
+    },
+    {
+      "code": "SYSH",
+      "name": "SYSH (AIS)"
+    },
+    {
+      "code": "UGDO",
+      "name": "DSTO"
+    },
+    {
+      "code": "UGOD",
+      "name": "UGOD (AIS)"
+    },
+    {
+      "code": "UROP",
+      "name": "UROP"
+    },
+    {
+      "code": "UST",
+      "name": "UST"
+    },
+    {
+      "code": "UXUG",
+      "name": "UXUG"
+    },
+    {
+      "code": "VPTLO",
+      "name": "VPTLO"
+    }
+  ],
+  "terms": [
+    {
+      "term_code": "2610",
+      "term_name": "2026-27 Fall",
+      "term_num": 104
+    },
+    {
+      "term_code": "2540",
+      "term_name": "2025-26 Summer",
+      "term_num": 103
+    },
+    {
+      "term_code": "2530",
+      "term_name": "2025-26 Spring",
+      "term_num": 102
+    },
+    {
+      "term_code": "2520",
+      "term_name": "2025-26 Winter",
+      "term_num": 101
+    }
+  ],
+  "courseCount": 4030,
+  "rawRowCount": 15178,
+  "generatedAt": "2026-09-25T11:29:57.591Z"
+}
