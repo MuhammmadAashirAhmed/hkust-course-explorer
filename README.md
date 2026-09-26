@@ -23,6 +23,20 @@ the Camera app (iOS), or press `i` / `a` in the terminal to launch a
 simulator. `yarn web` also runs it in a browser, though the primary target
 is mobile.
 
+**On a campus network like eduroam:** many university Wi-Fi networks
+isolate devices from each other for security, so your phone cannot discover
+your laptop's dev server even though both show as connected to the same
+network. If the QR code does nothing or Expo Go's "Development servers"
+list stays empty, use tunnel mode instead, which routes through the
+internet instead of the local network:
+
+```bash
+yarn start --tunnel
+```
+
+The first run will ask to install `@expo/ngrok` (already listed as a dev
+dependency here, so this should be quick).
+
 The bundled dataset (`app/data/generated/`) is already checked in, so no
 extra setup step is required before running the app. If you want to
 regenerate it from the raw dataset yourself:
