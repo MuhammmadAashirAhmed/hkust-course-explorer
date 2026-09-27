@@ -59,6 +59,12 @@ module.exports = {
     "react-native/no-raw-text": 0,
     // reactotron
     "reactotron/no-tron-in-production": "error",
+    // react-hooks: this rule ships as part of the "expo" config as of SDK 57's
+    // eslint-config-expo, and flags legitimate ref.current reads inside inline
+    // style arrays in the untouched Ignite boilerplate components (Toggle/*,
+    // Screen.tsx) that predate this app's own code. Disabled rather than
+    // rewriting boilerplate this app doesn't otherwise touch.
+    "react-hooks/refs": 0,
     // eslint-config-standard overrides
     "comma-dangle": 0,
     "no-global-assign": 0,

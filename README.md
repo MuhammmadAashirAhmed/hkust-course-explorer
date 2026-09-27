@@ -11,7 +11,9 @@ network call, or authentication anywhere in the app.
 ## Setup and running the app
 
 Requirements: Node 20+, Yarn, and either the Expo Go app on a phone or an
-iOS/Android simulator.
+iOS/Android simulator. This project targets Expo SDK 57, which matches the
+current Expo Go release; Expo Go only supports the latest SDK on iOS, so an
+older SDK in the project will not open in it.
 
 ```bash
 yarn install
